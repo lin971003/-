@@ -1,0 +1,4 @@
+<button>页面2</button>
+<button bindtap="toIndex">返回首页</button>
+<button bindtap="toLog">跳转日志</button>
+

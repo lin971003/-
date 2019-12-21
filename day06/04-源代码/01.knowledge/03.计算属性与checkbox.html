@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="app">
+    <h2>请选择你会的技能:</h2>
+    <input type="checkbox" v-model="ishtml" id="htmlcb">
+    <label for="htmlcb">html</label>
+    <input type="checkbox" v-model="isjs" id="jscb">
+    <label for="jscb">js</label>
+    <input type="checkbox" v-model="iscss" id="csscb">
+    <label for="csscb">css</label>
+
+    <hr>
+    <input type="checkbox" v-model="isAll" id="allcb">
+    <label for="allcb">全选</label>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script>
+    const app = new Vue({
+      el: "#app",
+      data: {
+        ishtml: false,
+        isjs: false,
+        iscss: false
+      },
+      computed: {
+        isAll: {
+          get() {
+            // 以上所有checkbox选中时，全选就选中
+            return this.ishtml && this.isjs && this.iscss
+          },
+          set(status){
+            console.log(status)
+            this.ishtml =status
+            this.isjs =status
+            this.iscss =status
+          }
+        }
+      },
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,3 @@
+<view>
+<view class="item" wx:for="{{[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]}}">大家电{{index}}</view>
+</view>

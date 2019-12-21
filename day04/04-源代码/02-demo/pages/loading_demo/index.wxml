@@ -1,0 +1,6 @@
+<button bindtap="showLoad">显示loading</button>
+<button bindtap="hideLoad">隐藏loading</button>
+
+
+<button bindtap="showNavLoading">导航栏loading显示</button>
+<button bindtap="hideNavLoading">导航栏loading隐藏</button>

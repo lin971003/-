@@ -1,0 +1,1 @@
+<button bindtap="toRequest">发请求</button>

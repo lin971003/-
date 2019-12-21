@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="app">
+    <h3>我的名:{{firstName}}</h3>
+    <h3>我的姓:{{lastName}}</h3>
+    <h2>我的姓名:{{fullName}}</h2>
+    <input type="text" v-model="fullName">
+  </div>
+  <!-- 开发环境版本，包含了有帮助的命令行警告 -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script>
+    const app = new Vue({
+      el: "#app",
+      data: {
+        firstName: 'Joven',
+        lastName: 'Wang'
+      },
+      computed: {
+        fullName: {
+          // 称为getter
+          get() {
+            return this.firstName + ' ' + this.lastName
+          },
+          set(newValue){
+            // console.log(newValue)
+            let arr = newValue.trim().split(' ')
+            this.firstName = arr[0]
+            this.lastName = arr[1]||''
+          }
+        }
+      }
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,2 @@
+<navigator url="/pages/page2/index">去到页面2</navigator>
+<button bindtap="goBack">返回首页</button>
