@@ -16,7 +16,8 @@
 <body>
   <div id="app">
     <h2>我是父组件</h2>
-    <child msg="不要早恋" parent-msg='牙膏不要从中间挤'></child>
+    {{info}}
+    <child :msg="info" parent-msg='牙膏不要从中间挤'></child>
   </div>
   <!-- 开发环境版本，包含了有帮助的命令行警告 -->
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
@@ -25,6 +26,7 @@
       <h2>我是子组件</h2>
       <h3>父对子说:{{msg}}</h3>
       <h3>父对子说:{{parentMsg}}</h3>
+      <button @click="msg=1234">sfdsf</button>
     </div>
   </script>
   <script>
@@ -34,7 +36,9 @@
     })
     const app = new Vue({
       el: "#app",
-      data: {}
+      data: {
+        info:'不要早恋'
+      }
     });
   </script>
 </body>
