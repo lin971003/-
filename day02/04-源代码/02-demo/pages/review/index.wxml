@@ -1,0 +1,9 @@
+<text>{{message}}</text>
+
+<view wx:for="{{songList}}" wx:key="id" wx:for-item="song">{{song.name}} --{{index}}</view>
+
+<button bindtap="tapHandler">点我呀</button>
+<view>
+  {{num}}
+  <button bindtap="add">+</button>
+</view>

@@ -1,6 +1,6 @@
 # mpvue-lol
 
-> A Mpvue project
+> 英雄联盟
 
 ## Build Setup
 

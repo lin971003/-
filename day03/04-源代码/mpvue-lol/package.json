@@ -2,7 +2,7 @@
   "name": "mpvue-lol",
   "version": "1.0.0",
   "mpvueTemplateProjectVersion": "0.1.0",
-  "description": "A Mpvue project",
+  "description": "英雄联盟",
   "author": "王侨文 <wangqiaowen@itcast.cn>",
   "private": true,
   "scripts": {

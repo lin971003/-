@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="app">
+    <marquee :list="list">
+      <template slot="one" scope="props">
+        <li style="color:green">{{props.rowdata}}</li>
+    </template>
+    </marquee>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+  <script type="text/x-template" id="tpl">
+    <div>
+      <ul>
+        <slot name="one" v-for="item in list" :rowdata="item"></slot>
+      </ul>
+    </div>
+  </script>
+  <script>
+
+    Vue.component('marquee', {
+      template:'#tpl',
+      props:['list']
+    })
+
+
+    const app = new Vue({
+      el: "#app",
+      data: {
+        msg: '别浪，猥琐发育！',
+        list:[
+          '张**开通了乐黑卡',
+          '王**开通了乐黑卡',
+          '李**开通了乐黑卡',
+          '陈**开通了乐黑卡',
+          '徐**开通了乐黑卡'
+        ]
+      }
+    });
+  </script>
+</body>
+
+</html>

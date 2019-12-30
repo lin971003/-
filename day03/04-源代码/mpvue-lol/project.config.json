@@ -41,7 +41,7 @@
 					"id": -1,
 					"name": "英雄详情",
 					"pathName": "pages/detail/main",
-					"query": "id=ornn",
+					"query": "id=Kaisa",
 					"scene": null
 				}
 			]
