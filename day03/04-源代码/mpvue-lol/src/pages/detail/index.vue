@@ -55,7 +55,7 @@ export default {
   },
   onLoad (options) {
     this.hero = heroDetailArr.find(v => {
-      // false==undefined
+    // false==undefined
       return v.id === options.id
     })
     // 动态设置导航栏文案
