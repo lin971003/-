@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <H2>{{person}}</H2>
+      <H2>{{arr}}</H2>
+      <button @click="changeData">改变data</button>
+    </div>
+    <script src="./lib/vue.js"></script>
+    <script>
+      const app = new Vue({
+        el: "#app",
+        data: {
+          msg:'别浪，猥琐发育',
+          person:{
+            name:'joven',
+            age:19
+          },
+          arr:[
+            '两只蝴蝶'
+          ]
+        },
+        methods: {
+          changeData(){
+            // this.person.sex ='男'
+            Vue.set(this.person,'sex','男')
+            this.$set(this.person,'sex','男')
+          }
+        },
+      });
+      </script>
+  </body>
+</html>
