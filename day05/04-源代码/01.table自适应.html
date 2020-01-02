@@ -1,71 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Document</title>
+	<meta charset="utf-8"> 
+	<title>表格自适应</title>
   <style>
-    table{
-      width:100%;
-      border:1px solid #ccc;
-    }
-    td{
-      border:1px solid #ccc;
-    }
-    tr td:nth-child(1){
-      width: 100px;
-    }
-    tr td:nth-child(2){
-      white-space: nowrap;
-    }
+  table{
+    width: 100%;
+  }
+  tr td{
+    text-align: center;
+    border:1px solid green;
+  }
+  tr td:nth-child(1){
+    width: 100px;
+    word-wrap:break-word;word-break:break-all;
+  }
+  tr td:nth-child(2){
+    text-align: left;
+    /* 设置一个小的宽度，随内容自适应 */
+    width: 1%;;
+  }
   </style>
 </head>
-
 <body>
-  <div id="app">
-    <table>
-      <tr v-for="(item, index) in songList" :key="index">
-        <td>{{item.name}}</td>
-        <td>{{item.id}}</td>
-        <td>{{item.detail}}</td>
-        <td>{{item.others}}</td>
-      </tr>
-    </table>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
-  <script>
-    const app = new Vue({
-      el: "#app",
-      data: {
-        songList: [{
-            name: 'aaa',
-            id: 1,
-            detail: '工工',
-            others: 'lll'
+<table class="table-bordered">
+	<caption>表格自适应</caption>
+	<thead>
+		<tr>
+			<th>名称</th>
+			<th>id</th>
+			<th>城市</th>
+			<th>邮编</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>TanmayTanmayTanmayTanmayTanmayTanmayTanmay</td>
+			<td>111</td>
+			<td>Bangalore</td>
+			<td>560001</td>
+		</tr>
+		<tr>
+      <td>Sachin</td>
+      <td>222222222222</td>
+			<td>Mumbai</td>
+			<td>400003</td>
+		</tr>
+		<tr>
+      <td>Uma</td>
+      <td>222</td>
+			<td>Pune</td>
+			<td>411027</td>
+		</tr>
+	</tbody>
+</table>
 
-          },
-          {
-            name: 'bbb',
-            id: 2222222222,
-            detail: '要要',
-            others: 'kkk'
-
-          },
-          {
-            name: 'ccc',
-            id: 3,
-            detail: '在在',
-            others: 'jjj'
-
-          }
-
-        ]
-      }
-    });
-  </script>
 </body>
-
 </html>
