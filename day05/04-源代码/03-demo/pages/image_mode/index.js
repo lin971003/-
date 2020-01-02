@@ -1,16 +1,11 @@
-// pages/pulldown_demo/index.js
+// pages/image_mode/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    num: 0
-  },
-  add() {
-    this.setData({
-      num: ++this.data.num
-    })
+
   },
 
   /**
@@ -52,14 +47,7 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-    // console.log('下拉')
-    setTimeout(() => {
-      this.setData({
-        num: 0
-      })
-      wx.stopPullDownRefresh()
 
-    }, 1000)
   },
 
   /**

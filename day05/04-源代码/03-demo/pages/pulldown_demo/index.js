@@ -1,13 +1,17 @@
-// pages/image_demo/index.js
+// pages/pulldown_demo/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    num: 0
   },
-
+  add() {
+    this.setData({
+      num: ++this.data.num
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -47,7 +51,16 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-
+    // wx.showToast({
+    //   title: '下拉刷新',
+    // })
+    setTimeout(() => {
+      this.setData({
+        num: 0
+      })
+      // 手动结束下拉动画
+      wx.stopPullDownRefresh()
+    }, 500)
   },
 
   /**

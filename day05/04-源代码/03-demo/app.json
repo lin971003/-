@@ -3,7 +3,7 @@
     "pages/pull_demo/index",
     "pages/pullup_demo/index",
     "pages/pulldown_demo/index",
-    "pages/image_demo/index",
+    "pages/image_mode/index",
     "pages/index/index",
     "pages/logs/logs"
   ],

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+  <style>
+    table{
+      width:100%;
+      border:1px solid #ccc;
+    }
+    td{
+      border:1px solid #ccc;
+    }
+    tr td:nth-child(1){
+      width: 100px;
+    }
+    tr td:nth-child(2){
+      white-space: nowrap;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <table>
+      <tr v-for="(item, index) in songList" :key="index">
+        <td>{{item.name}}</td>
+        <td>{{item.id}}</td>
+        <td>{{item.detail}}</td>
+        <td>{{item.others}}</td>
+      </tr>
+    </table>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+  <script>
+    const app = new Vue({
+      el: "#app",
+      data: {
+        songList: [{
+            name: 'aaa',
+            id: 1,
+            detail: '工工',
+            others: 'lll'
+
+          },
+          {
+            name: 'bbb',
+            id: 2222222222,
+            detail: '要要',
+            others: 'kkk'
+
+          },
+          {
+            name: 'ccc',
+            id: 3,
+            detail: '在在',
+            others: 'jjj'
+
+          }
+
+        ]
+      }
+    });
+  </script>
+</body>
+
+</html>
