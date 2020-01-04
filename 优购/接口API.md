@@ -7,6 +7,8 @@
 生产环境的域名为：https://www.uinav.com
 另一个后台环境（不能完成支付）：https://ugo.botue.com
 
+另一个环境：（不能完成支付，而且比较慢）https://api.zbztb.cn
+
 说明：
 
    在所有的url中，凡是带有my的，服务器都是需要验证token的

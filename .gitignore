@@ -20,5 +20,5 @@ yarn-error.log*
 *.sln
 *.sw?
 *.itcast
-*.zip
+/*.zip
 *.avi

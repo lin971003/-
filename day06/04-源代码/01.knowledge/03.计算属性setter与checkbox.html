@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="app">
+    <h2>请选择你精通的技能</h2>
+    <input type="checkbox" id="htmlcb" v-model="ishtml">
+    <label for="htmlcb">html</label>
+    <input type="checkbox" id="jscb" v-model="isjs">
+    <label for="jscb">js</label>
+    <input type="checkbox" id="csscb" v-model="iscss">
+    <label for="csscb">css</label>
+    <hr>
+    <input type="checkbox" id="allcb" v-model="isAll">
+    <label for="allcb">全都会</label>
+  </div>
+  <script src="./lib/vue.js"></script>
+  <script>
+    const app = new Vue({
+      el: "#app",
+      data: {
+        ishtml: false,
+        isjs: false,
+        iscss: false
+      },
+      computed: {
+        isAll: {
+          get() {
+            return this.ishtml && this.isjs && this.iscss
+          },
+          set(status){
+            console.log(status)
+            this.ishtml =status
+            this.isjs =status
+            this.iscss =status
+          }
+        }
+      },
+    });
+  </script>
+</body>
+
+</html>

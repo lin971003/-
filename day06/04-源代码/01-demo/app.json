@@ -1,0 +1,29 @@
+{
+  "pages": [
+    "pages/storage_demo/index",
+    "pages/home/index",
+    "pages/page2/index",
+    "pages/log/log",
+    "pages/page1/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/log/log",
+        "text": "日志"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
