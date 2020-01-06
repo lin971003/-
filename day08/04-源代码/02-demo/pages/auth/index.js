@@ -1,4 +1,4 @@
-// pages/auth_demo/index.js
+// pages/auth/index.js
 Page({
 
   /**
@@ -8,32 +8,34 @@ Page({
 
   },
 
+  getInfo(res){
+    console.log(res)
+  },
+
   getAddr() {
     wx.getSetting({
-      success(res) {
-        console.log(res.authSetting)
-        if (res.authSetting['scope.address'] === false) {
-          // 已拒绝
-          // 提示，允许
+      success(setting) {
+        if (setting.authSetting['scope.address'] === false) {
+          // 拒绝
           wx.showModal({
             title: '提示',
-            content: '请在设置中允许通讯地址',
-            success(res) {
-              if (res.confirm) {
+            content: '请在设置中允许通讯址',
+            success(status) {
+              if (status.confirm) {
                 wx.openSetting({
+
                 })
               }
             }
           })
 
         } else {
-          // 请求授权
+          // 未发起授权或者授权允许
+          // 发起授权
           wx.authorize({
             scope: 'scope.address',
             success() {
-              // 用户已经同意后
-              //调用方法，获取地址
-              console.log('用户同意')
+              // 调接口拿数据
               wx.chooseAddress({
                 success(res) {
                   console.log(res)
@@ -41,16 +43,19 @@ Page({
               })
             }
           })
-
         }
       }
     })
 
-  },
-  getInfo(res){
-    console.log(res)
+
+
   },
 
+  openSetting() {
+    wx.openSetting({
+
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

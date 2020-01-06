@@ -1,0 +1,4 @@
+<button bindtap="getAddr">获取用户收货地址</button>
+<button bindtap="openSetting">打开设置</button>
+<!-- <button bindtap="getInfo">获取用户信息</button> -->
+<button open-type="getUserInfo" bindgetuserinfo="getInfo">用户信息</button>

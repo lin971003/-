@@ -1,6 +1,6 @@
 {
   "pages": [
-    "pages/auth_demo/index",
+    "pages/auth/index",
     "pages/index/index",
     "pages/logs/logs"
   ],
