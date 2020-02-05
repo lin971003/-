@@ -1,0 +1,7 @@
+<view>
+  <text>这是一个寂寞的天</text>
+</view>
+<text>第二行</text>
+<image src="https://aecpm.alicdn.com/simba/img/TB13xKuLVXXXXcHapXXSutbFXXX.jpg"></image>
+<button>点我呀</button>
+<p>p标签可以使用吗</p>

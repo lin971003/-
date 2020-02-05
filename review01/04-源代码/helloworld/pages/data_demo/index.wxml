@@ -1,0 +1,6 @@
+<text>{{message}}</text>
+<image src="{{imgUrl}}"></image>
+<view wx:if="{{isHandsome}}">很帅</view>
+<view wx:for="{{movieList}}">{{item}}--{{index}}</view>
+
+<button bindtap="tapHandler">点我呀</button>

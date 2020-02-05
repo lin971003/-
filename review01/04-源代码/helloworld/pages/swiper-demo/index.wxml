@@ -1,0 +1,7 @@
+  <swiper circular autoplay indicator-dots>
+        <block wx:for="{{[1,2,3,4]}}" wx:key="*this">
+          <swiper-item>
+           <image src="https://img13.360buyimg.com/n7/jfs/t1/47314/32/16522/149057/5dd752a4E06eca7a3/08762efebb232315.jpg"></image>
+          </swiper-item>
+        </block>
+      </swiper>

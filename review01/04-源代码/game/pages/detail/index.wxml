@@ -1,0 +1,2 @@
+<!--pages/detail/index.wxml-->
+<text>英雄技能是：{{title}}</text>
