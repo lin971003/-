@@ -1,5 +1,0 @@
-image{
-  width: 200rpx;
-  height: 200rpx;
-  border:1px solid green;
-}

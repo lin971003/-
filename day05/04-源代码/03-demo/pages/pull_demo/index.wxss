@@ -1,5 +1,0 @@
-.item{
-  height: 130rpx;
-  border-bottom: 1px solid #ccc;
-  box-sizing: border-box;
-}

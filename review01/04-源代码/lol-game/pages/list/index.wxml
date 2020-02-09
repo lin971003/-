@@ -1,6 +1,6 @@
 <view class="list">
-  <view class="hero" wx:for="{{heroList}}">
+  <navigator url="/pages/detail/index" class="hero" wx:for="{{heroList}}">
     <image src="{{item.iconUrl}}"></image>
     <text>{{item.name}}</text>
-  </view>
+  </navigator>
 </view>
