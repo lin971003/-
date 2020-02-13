@@ -1,10 +1,9 @@
 <template>
   <div>
-    <h2>父组件</h2>
-    <h3>我说的：{{info}}</h3>
-    <input type="text" v-model="person.name">
-    <input type="text" v-model="info">
-    <Child :msg="info" parentMsg="牙膏不要从中间挤" :person="person"/>
+    <h3>我是父组件</h3>
+    <h4>{{iphone.name}}</h4>
+    <input type="text" v-model="iphone.name">
+    <Child :mobile="iphone" parentMsg="不要早恋"/>
   </div>
 </template>
 
@@ -16,10 +15,9 @@ export default {
   },
   data(){
     return{
-      info:'不要早恋',
-      person:{
-        name:'joven',
-        age:19
+      iphone:{
+        color:'red',
+        name:'iphone 11'
       }
     }
   }

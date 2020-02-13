@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+    #app{
+      border:1px solid red;
+    }
+    .child{
+      border:1px solid green;
+    }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <h3>我是父组件</h3>
+      <child></child>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script type="text/x-template" id="child">
+      <div class="child">
+        <h3>我是子组件</h3>
+      </div>
+    </script>
+    <script>
+
+      Vue.component('child', {
+        template:'#child'
+      })
+
+      const app = new Vue({
+        el: "#app",
+        data: {}
+      });
+      </script>
+  </body>
+</html>

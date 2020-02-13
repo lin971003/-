@@ -1,44 +1,34 @@
 <template>
   <div class="child">
-    <h2>子组件</h2>
-    <h3>父对子说:{{message}}</h3>
-    <h3>父对子说:{{parentMsg}}</h3>
-    <input type="text"
-           v-model="message">
-     <h3>{{psn}}</h3>
-     <input type="text" v-model="psn.name">
+    <h3>我是子组件</h3>
+    <h4>{{phone.name}}</h4>
+    <input type="text" v-model="phone.name">
+    <h4>父对子说：{{parentMsg}}</h4>
   </div>
 </template>
 
 <script>
 export default {
-  props: ['msg', 'parentMsg','person'],
-  data () {
-    return {
-      message: this.msg,
-      // psn:JSON.parse(JSON.stringify(this.person))
-      psn:Object.assign({},this.person)
+  props:['mobile','parentMsg'],
+  data(){
+    return{
+      phone:Object.assign({},this.mobile)
+      // phone:this.mobile
     }
   },
-  watch: {
-    msg (value) {
-      /*eslint-disable*/
-      console.log(value)
-      this.message = value
-    },
-    person:{
-      deep:true,
-      handler(newValue){
-        console.log(newValue)
-        this.psn = Object.assign({},newValue)
-      }
-    }
+  watch:{
+     mobile:{
+       deep:true,
+       handler(newValue){
+         this.phone=Object.assign({},newValue)
+       }
+     }
   }
 }
 </script>
 
 <style>
-.child {
-  border: 1px solid green;
+.child{
+  border:1px solid green;
 }
 </style>
