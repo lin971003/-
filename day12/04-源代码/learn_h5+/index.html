@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title></title>
+		<script type="text/javascript">
+			document.addEventListener('plusready', function() {
+				//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+			});
+
+			function makeCall() {
+				// plus.device.dial(13807069752)
+				// plus.device.beep(10)
+				plus.device.vibrate(5000)
+			}
+			
+			function takePic(){
+				let cls = plus.camera.getCamera()
+				cls.captureImage()
+			}
+			function getAddr(){
+				plus.contacts.getAddressBook( plus.contacts.ADDRESSBOOK_PHONE, function( addressbook ) {
+						// 可通过addressbook进行通讯录操作
+						console.log(addressbook)
+						addressbook.find(["displayName","phoneNumbers"],function(contacts){
+									console.log(contacts)
+								}, function () {
+									alert("error");
+								},{multiple:true});
+					}, function ( e ) {
+						alert( "Get address book failed: " + e.message );
+					} );
+			}
+		</script>
+	</head>
+	<body>
+		<button type="button" onclick="makeCall()">拨打电话</button>
+		<button type="button" onclick="takePic()">拍照</button>
+		<button type="button" onclick="getAddr()">获取通讯录</button>
+	</body>
+</html>

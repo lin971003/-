@@ -8,7 +8,7 @@ http
   .createServer(function(req, res) {
     // 是不是html文件
     let isHtml = false
-    // 是不是浏览器缓存是不是最新的
+    // 浏览器缓存是不是最新的
     let isFresh = false
 
     var pathname = url.parse(req.url).pathname;

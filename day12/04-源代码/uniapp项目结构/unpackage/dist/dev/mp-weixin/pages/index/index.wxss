@@ -1,0 +1,16 @@
+
+image.data-v-0ed71816 {
+	width: 100px;
+	height: 100px;
+}
+.box.data-v-0ed71816{
+	width: 100px;
+	height: 100px;
+	background-color: green;
+}
+.rbox.data-v-0ed71816{
+	width: 200rpx;
+	height: 200rpx;
+	background-color: green;
+}
+
