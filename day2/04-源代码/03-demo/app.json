@@ -1,0 +1,25 @@
+{
+  "pages": [
+    "pages/goods_demo/index",
+    "pages/component_demo/index",
+    "pages/data_demo/index",
+    "pages/navigator_demo/index",
+    "pages/module_demo/index",
+    "pages/swiper_demo/index",
+    "pages/switch_img/index",
+    "pages/this_demo/index",
+    "pages/event_demo/index",
+    "pages/create_demo/index",
+    "pages/demo/index",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "这是一个寂寞的天",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
