@@ -1,3 +1,0 @@
-<text>登录页</text>
-
-<button bindtap="toHome">返回首页</button>

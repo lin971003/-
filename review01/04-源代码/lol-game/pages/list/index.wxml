@@ -1,6 +1,0 @@
-<view class="list">
-  <navigator url="/pages/detail/index" class="hero" wx:for="{{heroList}}">
-    <image src="{{item.iconUrl}}"></image>
-    <text>{{item.name}}</text>
-  </navigator>
-</view>

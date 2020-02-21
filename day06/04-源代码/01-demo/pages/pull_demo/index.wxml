@@ -1,3 +1,0 @@
-<view class="ul">
-  <view class="li" wx:for="{{arr}}">Item {{item}}</view>
-</view>

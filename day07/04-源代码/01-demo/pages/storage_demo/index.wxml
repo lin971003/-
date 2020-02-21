@@ -1,8 +1,0 @@
-<button bindtap="saveName">存姓名</button>
-<button bindtap="saveAge">存年龄</button>
-<button bindtap="getNameAge">取姓名和年龄</button>
-<button bindtap="removeName">移除姓名</button>
-<button bindtap="clearAll">清空存储</button>
-
-<button bindtap="saveObj">存手机</button>
-<button bindtap="getObj">取手机</button>
