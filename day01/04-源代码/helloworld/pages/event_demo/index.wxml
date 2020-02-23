@@ -1,0 +1,1 @@
+<button bindtap="tapHandler">点我呀</button>

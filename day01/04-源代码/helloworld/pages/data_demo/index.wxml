@@ -1,0 +1,9 @@
+<text>{{message}}</text>
+<image src="{{imgUrl}}"></image>
+<view wx:if="{{isHandsome}}">很帅</view>
+<view wx:else>丑拒</view>
+
+<view wx:for="{{songList}}" wx:key="*this">{{item}}--{{index}}</view>
+
+
+<view wx:for="{{infoList}}" wx:key="id">{{item.name}}:{{index}}</view>

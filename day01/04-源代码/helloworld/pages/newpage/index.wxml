@@ -1,0 +1,15 @@
+<view class="box">
+
+<text class="txt">这是一个寂寞的天</text>
+</view>
+<view>
+  <text>我是第二行</text>
+</view>
+
+<image src="https://img13.360buyimg.com/mobilecms/s280x280_jfs/t1/108669/20/6477/124669/5e4ca6acEc91aa6df/9d1e3ab8efdf9ef0.jpg.webp"></image>
+
+<button>点我呀</button>
+<button size="mini">mini按钮</button>
+
+<p>p标签可以显示吗</p>
+<xxx>xxx标签可以显示吗</xxx>

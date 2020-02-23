@@ -1,0 +1,20 @@
+{
+  "pages": [
+    "pages/images_switch/index",
+    "pages/this_demo/index",
+    "pages/event_demo/index",
+    "pages/data_demo/index",
+    "pages/goods/index",
+    "pages/newpage/index",
+    "pages/demo/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "hello world",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
