@@ -1,1 +1,2 @@
 <text>英雄技能：{{skill}}</text>
+<text class="red">{{'这是一个寂寞的天'}}</text>

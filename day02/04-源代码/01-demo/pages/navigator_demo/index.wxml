@@ -1,1 +1,2 @@
-<navigator url="/pages/index/index?title=joven">点我去首页</navigator>
+<navigator url="/pages/index/index?title=joven">带我去首页</navigator>
+<button data-title="joven" bindtap="toIndex">点我去首页</button>

@@ -1,4 +1,4 @@
-// pages/navigator_demo/index.js
+// pages/target_demo/index.js
 Page({
 
   /**
@@ -7,11 +7,9 @@ Page({
   data: {
 
   },
-  toIndex(event){
-    let name = event.currentTarget.dataset.title
-    wx.navigateTo({
-      url: '/pages/index/index?title='+name,
-    })
+
+  tapHandler(event){
+    console.log(event)
   },
 
   /**

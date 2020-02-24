@@ -1,1 +1,3 @@
-/* pages/detail/detail.wxss */
+.red{
+  color: green;
+}
