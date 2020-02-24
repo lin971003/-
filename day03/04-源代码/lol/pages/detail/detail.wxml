@@ -1,0 +1,50 @@
+<view class="all">
+  <!-- 轮播图 -->
+  <swiper indicator-dots="{{true}}" autoplay="{{true}}" interval="{{1000}}" duration="{{300}}" circular>
+    <block class='gao' wx:for="{{currentHero.bgs}}" wx:key="*this">
+      <swiper-item>
+        <image src='{{item}}'></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  <!-- 内容 -->
+  <view class='content'>
+    <view class="left">
+      <!-- 名字 -->
+      <text class="nickname">影流之主</text>
+      <text class="name">儿童劫</text>
+      <!-- 标签 -->
+      <view class='tags'>
+        <text>坦克</text>
+        <text>坦克</text>
+        <text>坦克</text>
+      </view>
+      <!-- 能力值 -->
+      <view class="Ability">
+        <view class="AbiltyItem">
+          <text>生存能力</text>
+          <progress percent="40" stroke-width="12" color="#1ec76b" backgroundColor="#363636" active duration='20' />
+        </view>
+        <view class="AbiltyItem">
+          <text>物理攻击</text>
+          <progress percent="80" stroke-width="12" color="#f2c40c" backgroundColor="#363636" active duration='20' />
+        </view>
+        <view class="AbiltyItem">
+          <text>魔法攻击</text>
+          <progress percent="20" stroke-width="12" color="#f2a709" backgroundColor="#363636" active duration='20' />
+        </view>
+        <view class="AbiltyItem">
+          <text>操作难度</text>
+          <progress percent="100" stroke-width="12" color="#cb8eff" backgroundColor="#363636" active duration='20' />
+        </view>
+      </view>
+    </view>
+    <view class="right">
+      <text class="story">
+      对洛特兰部落而言，瓦斯塔亚的洛是臭名远播的捣蛋鬼，同时也是有史以来最为出色的战舞舞者。他风流潇洒，魅力无穷，同时却令人难以捉摸。在艾欧尼亚高地的居民眼中，“洛”这个名字一直都跟热闹非凡的节日庆典、热火朝天的狂欢派对和杂乱无章的音乐划上等号。很少人知道，这个精力充沛的浪荡子和叛逆的霞是一对儿，而他的一举一动就是为了全力配合她的行动。“自由为伍，佳人为伴，还有值得献身的道义。
+    </text>
+    </view>
+  </view>
+  <!-- 左边盒子 -->
+  <!-- 右边盒子 -->
+</view>

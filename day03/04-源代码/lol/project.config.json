@@ -17,7 +17,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.10.1",
 	"appid": "wxd24d05cdfb5198f9",
-	"projectname": "lol-game",
+	"projectname": "lol",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
@@ -52,7 +52,7 @@
 					"id": -1,
 					"name": "英雄详情",
 					"pathName": "pages/detail/detail",
-					"query": "id=Pyke",
+					"query": "id=paike&name=派克",
 					"scene": null
 				}
 			]

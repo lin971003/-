@@ -1,0 +1,20 @@
+/* pages/home/home.wxss */
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #363636;
+}
+.hero {
+  width: 33.3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+image {
+  width: 88px;
+  height: 88px;
+}
+text {
+  margin: 10px 0;
+  color: #ccc;
+}
