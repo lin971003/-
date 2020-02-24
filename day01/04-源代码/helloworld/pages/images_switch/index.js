@@ -28,21 +28,16 @@ Page({
   },
   // 下一张
   next() {
-    // 当前为最后一张，点下一张时，显示第一张
-    // if(this.data.index===this.data.imgList.length-1){
-    //   this.setData({
-    //     index:0
-    //   })
-    //   return
-    // }
-    let index = this.data.index
-    index++
-
-    if (index > this.data.imgList.length - 1) {
-      index = 0
+    // 什么时候会越界？最后一张
+    // 越界怎么处理？下一张是第一张
+    if(this.data.index===this.data.imgList.length-1){
+      this.setData({
+        index:0
+      })
+      return
     }
     this.setData({
-      index: index
+      index:this.data.index+1
     })
   },
 
