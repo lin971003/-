@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <swiper :autoplay="false"></swiper>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <script type="text/x-template" id="tpl">
+      <div>
+        <h2>这里是swiper组件</h2>
+      </div>
+    </script>
+
+    <script>
+      Vue.component('swiper',{
+        template:'#tpl',
+        props:['autoplay'],
+        created(){
+          console.log(typeof this.autoplay)
+        }
+      })
+
+      const app = new Vue({
+        el: "#app",
+        data: {}
+      });
+      </script>
+  </body>
+</html>
