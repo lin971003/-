@@ -1,4 +1,4 @@
-import {heroList} from '../../data/lol_duowan.js'
+import { heroList } from '../../data/lol_duowan.js'
 Page({
 
   /**
@@ -6,6 +6,13 @@ Page({
    */
   data: {
     heroList
+  },
+
+  toDetail(event) {
+    let id = event.currentTarget.dataset.id
+    wx.navigateTo({
+      url: '/pages/detail/detail?id=' + id,
+    })
   },
 
   /**
