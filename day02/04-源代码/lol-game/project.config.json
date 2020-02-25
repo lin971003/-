@@ -16,7 +16,7 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.10.1",
-	"appid": "wxd24d05cdfb5198f9",
+	"appid": "wx4ec6df040af98951",
 	"projectname": "lol-game",
 	"debugOptions": {
 		"hidedInDevtools": []
@@ -49,10 +49,17 @@
 			"current": -1,
 			"list": [
 				{
-					"id": -1,
+					"id": 0,
 					"name": "英雄详情",
 					"pathName": "pages/detail/detail",
-					"query": "id=Pyke",
+					"query": "id=garen",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/less_demo/index",
+					"pathName": "pages/less_demo/index",
+					"query": "",
 					"scene": null
 				}
 			]

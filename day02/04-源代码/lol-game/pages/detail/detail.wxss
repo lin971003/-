@@ -4,6 +4,10 @@ page{
   font-size: 12px;
 }
 
+/* swiper{
+  height: 100px;
+} */
+
 swiper image{
   width: 100%;
 }

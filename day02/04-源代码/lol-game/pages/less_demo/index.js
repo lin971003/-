@@ -1,31 +1,18 @@
-import heroDetailArr  from '../../data/lol_details_duowan.js'
+// pages/less_demo/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    hero:{}
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    let id = options.id
-    // 需要从array找一个id===options.id的对象
 
-    let hero = heroDetailArr.find(v=>{
-      return v.id===id
-    })
-    this.setData({
-      hero
-    })
-
-    // 动态设置导航栏标题为 title-name
-    wx.setNavigationBarTitle({
-      title:`${hero.title}-${hero.name}`
-    })
   },
 
   /**

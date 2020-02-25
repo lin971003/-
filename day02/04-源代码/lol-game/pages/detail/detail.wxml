@@ -1,42 +1,40 @@
 <swiper indicator-dots>
-  <block wx:for="{{[1,1,1,1]}}" wx:key="*this">
+  <block wx:for="{{hero.bgs}}" wx:key="*this">
     <swiper-item>
-      <image src="http://ossweb-img.qq.com/images/lol/web201310/skin/big497000.jpg"></image>
+      <image src="{{item}}"></image>
     </swiper-item>
   </block>
 </swiper>
 
 <view class="content">
   <view class="left">
-    <text class="title">幻翎</text>
-    <text class="name">洛</text>
+    <text class="title">{{hero.title}}</text>
+    <text class="name">{{hero.name}}</text>
     <!-- 标签 -->
     <view class="tags">
-      <text>中单</text>
-      <text>中单</text>
-      <text>中单</text>
+      <text wx:for="{{hero.tags}}" wx:key="*this">{{item}}</text>
     </view>
 
     <!-- 能力 -->
     <view class="ability">
       <view class="item">
         <text>生存能力</text>
-        <progress percent="80" stroke-width="12" activeColor="#1ec76b" backgroundColor="#363636" active />
+        <progress percent="{{hero.Ability.life}}" stroke-width="12" activeColor="#1ec76b" backgroundColor="#363636" active />
       </view>
       <view class="item">
         <text>物理攻击</text>
-        <progress percent="80" stroke-width="12" activeColor="#f2c40c" backgroundColor="#363636" active />
+        <progress percent="{{hero.Ability.physical}}" stroke-width="12" activeColor="#f2c40c" backgroundColor="#363636" active />
       </view>
       <view class="item">
         <text>魔法攻击</text>
-        <progress percent="80" stroke-width="12" activeColor="#f2a709" backgroundColor="#363636" active />
+        <progress percent="{{hero.Ability.magic}}" stroke-width="12" activeColor="#f2a709" backgroundColor="#363636" active />
       </view>
       <view class="item">
         <text>操作难度</text>
-        <progress percent="80" stroke-width="12" activeColor="#cb8eff" backgroundColor="#363636" active />
+        <progress percent="{{hero.Ability.difficulty}}" stroke-width="12" activeColor="#cb8eff" backgroundColor="#363636" active />
       </view>
     </view>
 
   </view>
-  <view class="right">对洛特兰部落而言，瓦斯塔亚的洛是臭名远播的捣蛋鬼，同时也是有史以来最为出色的战舞舞者。他风流潇洒，魅力无穷，同时却令人难以捉摸。在艾欧尼亚高地的居民眼中，“洛”这个名字一直都跟热闹非凡的节日庆典、热火朝天的狂欢派对和杂乱无章的音乐划上等号。很少人知道，这个精力充沛的浪荡子和叛逆的霞是一对儿，而他的一举一动就是为了全力配合她的行动。“自由为伍，佳人为伴，还有值得献身的道义。”</view>
+  <view class="right">{{hero.story}}</view>
 </view>

@@ -1,8 +1,8 @@
 {
   "pages": [
+    "pages/swiper_demo/index",
     "pages/target_demo/index",
     "pages/navigator_demo/index",
-    "pages/swiper_demo/index",
     "pages/module_demo/index",
     "pages/logs/logs",
     "pages/index/index"
