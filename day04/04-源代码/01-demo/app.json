@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/request_demo/index",
     "pages/auth_demo/index",
     "pages/image_mode/index",
     "pages/index/index",
