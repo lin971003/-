@@ -9,9 +9,9 @@ Page({
   },
   tapHandler(){
     wx.authorize({
-      scope: 'scope.address',
+      scope: 'scope.record',
       success() {
-        wx.chooseAddress({
+        wx.startRecord({
           success(res) {
             console.log(res)
           }

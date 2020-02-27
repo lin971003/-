@@ -1,7 +1,7 @@
 <swiper indicator-dots>
   <block wx:for="{{hero.bgs}}" wx:key="*this">
     <swiper-item>
-      <image src="{{item}}"></image>
+      <image mode="scaleToFill" src="{{item}}"></image>
     </swiper-item>
   </block>
 </swiper>
