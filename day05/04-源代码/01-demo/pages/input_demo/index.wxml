@@ -1,0 +1,3 @@
+<input type="idcard"></input>
+<input confirm-type="search"></input>
+<input confirm-type="send" bindinput="getInput" bindconfirm="confirmHandler"></input>
