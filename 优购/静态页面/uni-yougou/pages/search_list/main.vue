@@ -1,11 +1,11 @@
 <template>
 	<view>
 		<!-- 头部 -->
-		<div class="header">
+		<view class="header">
 			<icon type="search" size="16" color="#bbb">
 			</icon>
 			<input type="text" value="小米">
-		</div>
+		</view>
 
 		<!-- 过滤菜单 -->
 		<view class="filter-menu">
