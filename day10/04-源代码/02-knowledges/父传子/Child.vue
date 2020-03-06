@@ -17,7 +17,7 @@ export default {
     return {
       message: this.msg,
       // psn:JSON.parse(JSON.stringify(this.person))
-      psn:Object.assign({},this.person)
+      psn:this.person
     }
   },
   watch: {

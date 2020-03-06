@@ -23,24 +23,13 @@
     <div class="child">
       <h2>我是子组件</h2>
       <button @click="clickHandler">想对父亲说</button>
-      <h4>子对父说:{{msg}}</h4>
-      <input type="text" :value="msg" @input="inputHandler">
     </div>
     </script>
   <script>
     // 子组件
     Vue.component('child', {
       template: '#childTpl',
-      data(){
-        return{
-          msg:'少抽烟'
-        }
-      },
       methods: {
-        inputHandler(event){
-          this.msg = event.target.value
-          this.$emit('child-event',this.msg)
-        },
         clickHandler(){
           this.$emit('child-event','少抽烟')
         }

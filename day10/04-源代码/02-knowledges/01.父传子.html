@@ -16,13 +16,16 @@
 <body>
   <div id="app">
     <h2>我是父组件</h2>
-    <child msg="不要早恋" parent-msg="牙膏不要从中间挤"></child>
+    <h3>我对子说：{{message}}</h3>
+    <input type="text" v-model="message">
+    <child :msg="message" parent-msg="牙膏不要从中间挤"></child>
   </div>
   <script src="./lib/vue.js"></script>
   <script type='text/x-template' id="childTpl">
     <div class="child">
       <h2>我是子组件</h2>
-      <h3>父对子说:{{msg}}</h3>
+      <h3>父对子说:{{info}}</h3>
+      <input type="text" v-model="info">
       <h3>父对子说:{{parentMsg}}</h3>
     </div>
     </script>
@@ -30,12 +33,25 @@
     // 子组件
     Vue.component('child', {
       template: '#childTpl',
-      props:['msg','parentMsg']
+      props:['msg','parentMsg'],
+      data(){
+        return{
+          info:this.msg
+        }
+      },
+      watch:{
+        msg(newValue){
+          // console.log(newValue)
+          this.info = newValue
+        }
+      }
     })
 
     const app = new Vue({
       el: "#app",
-      data: {}
+      data: {
+        message:'不要早恋'
+      }
     });
   </script>
 </body>

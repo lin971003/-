@@ -12,6 +12,7 @@ App({
    */
   onShow: function (options) {
     console.log('app 显示')
+    console.log(options.scene)
   },
 
   /**

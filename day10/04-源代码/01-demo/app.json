@@ -3,10 +3,7 @@
     "pages/home/index",
     "pages/category/index",
     "pages/search_list/index",
-    "pages/item/index",
-    "pages/pull_demo/index",
-    "pages/pulldown_counter/index",
-    "pages/pulldown_demo/index"
+    "pages/item/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
