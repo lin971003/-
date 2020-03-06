@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+  <style>
+     .child{
+       border:1px solid green;
+     }
+     .child2{
+       border:1px solid hotpink;
+     }
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <h2>我是父组件</h2>
+    <child></child>
+    <child2></child2>
+  </div>
+  <script src="./lib/vue.js"></script>
+  <script type='text/x-template' id="childTpl">
+    <div class="child">
+      <h2>我是子组件</h2>
+      <button @click="say2Bro">对弟弟说</button>
+    </div>
+    </script>
+    <script type='text/x-template' id="child2Tpl">
+      <div class="child2">
+        <h2>我是子组件2</h2>
+      </div>
+      </script>
+  <script>
+    let eventBus = new Vue()
+    // 子组件
+    Vue.component('child', {
+      template: '#childTpl',
+      methods: {
+        say2Bro(){
+          eventBus.$emit('to-bro','把压岁钱给我吧')
+        }
+      },
+    })
+    // 子组件2
+    Vue.component('child2', {
+      template: '#child2Tpl',
+      created() {
+        eventBus.$on('to-bro',(data)=>{
+          alert(data)
+        })
+      },
+    })
+
+
+    const app = new Vue({
+      el: "#app",
+      data: {}
+    });
+  </script>
+</body>
+
+</html>
