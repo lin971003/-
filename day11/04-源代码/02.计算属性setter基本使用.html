@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="app">
+    <h3>姓:{{firstName}}</h3>
+    <h3>名:{{lastName}}</h3>
+    <h3>我的姓名:{{fullName}}</h3>
+    <input type="text" v-model="fullName">
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script>
+    const app = new Vue({
+      el: "#app",
+      data: {
+        firstName: 'Joven',
+        lastName: 'Wang'
+      },
+      computed: {
+        fullName: {
+          get() {
+            return this.firstName + ' ' + this.lastName
+          },
+          set(newValue) {
+            // newValue是计算属性改变的值
+            // 需要在set方法里面改变计算属性的依赖
+            let arr = newValue.split(' ')
+            this.firstName = arr[0]
+            this.lastName = arr[1]
+          }
+        }
+      },
+      // watch:{
+      //   keyword:{
+      //     handler(newValue){
+
+      //     }
+      //   }
+      // }
+    });
+  </script>
+</body>
+
+</html>
