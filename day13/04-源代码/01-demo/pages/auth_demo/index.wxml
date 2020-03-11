@@ -1,0 +1,6 @@
+<button bindtap="getAddr">获取微信通讯地址</button>
+<button bindtap="getWeRun">获取微信运动步数</button>
+<button open-type="getUserInfo">用户信息</button>
+<button bindtap="getAuthData">获取授权数据</button>
+<button bindtap="openSetting">打开授权设置</button>
+<button bindtap="testAddr">测试</button>
