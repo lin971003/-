@@ -1,0 +1,11 @@
+<!-- 使用{{data属性}}渲染内容 -->
+<text>袁爷你说:{{msg}}</text>
+<!-- 标签属性也是{{}} -->
+<image src="{{imgUrl}}"></image>
+
+<!-- wx:if，如果条件满足的话，也渲染当前dom -->
+<view wx:if="{{isHandsome}}">很帅</view>
+<view wx:else>丑拒</view>
+
+<view wx:for="{{movieList}}">{{item}}--{{index}}</view>
+

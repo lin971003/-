@@ -1,43 +1,46 @@
-// pages/images_switch/index.js
+// pages/switch_images/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    // 图片数组
     imgList: [
       '/images/boy.png',
       '/images/girl.png',
       '/images/left.gif',
       '/images/right.png'
     ],
+    // 当前显示的图片在数组里面的下标
     index: 0
   },
   // 上一张
   prev() {
-    // 如果当前是第一张，直接到最后一张
-    if(!this.data.index){
+    // 如果是第一张的话，就设置index=最后一张的下标
+    if(this.data.index===0){
       this.setData({
         index: this.data.imgList.length - 1
       })
       return
     }
     this.setData({
-      index: this.data.index - 1
+      index: this.data.index-1
     })
+
   },
   // 下一张
   next() {
-    // 什么时候会越界？最后一张
-    // 越界怎么处理？下一张是第一张
-    if(this.data.index===this.data.imgList.length-1){
+    // 如果是最后一张，就设置index=0
+    if(this.data.imgList.length-1===this.data.index){
       this.setData({
         index:0
       })
+      // 是否需要return,是1,否则2
       return
     }
     this.setData({
-      index:this.data.index+1
+      index: this.data.index+1
     })
   },
 

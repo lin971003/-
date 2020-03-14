@@ -1,1 +1,2 @@
+<!-- 是否给.box添加.red样式 -->
 <view class="box {{isRed?'red':''}}" bindtap="toggleColor"></view>

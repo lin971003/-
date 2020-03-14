@@ -7,14 +7,15 @@ Page({
   data: {
 
   },
-
-  tapHandler(){
-    // console.log('5555')
+  // 事件处理方法和data平级,不需要放在methods
+  sayHello(){
+    // console.log('555.。。')
+    // alert在小程序里面用不了
     // alert('点疼我了')
     wx.showToast({
-      title: '点疼我了',
-      icon:'none',
-      duration:3000,
+      title: '成功',//提示的内容
+      icon: 'loading',//图标
+      duration: 4000, //提示显示的时间
       mask:true
     })
   },

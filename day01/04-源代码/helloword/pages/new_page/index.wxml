@@ -1,0 +1,19 @@
+<!-- text是用来渲染文本的，相当于html span，行内元素 -->
+<text>这是一个寂寞的天</text>
+<!-- view相当于html div，包裹作用，块级元素 -->
+<view>
+  <text>第二行</text>
+</view>
+
+<!-- image用来显示图片的，行内块级元素，有默认宽度，
+需要重置图片宽度 -->
+<image src="https://img12.360buyimg.com/mobilecms/s260x260_jfs/t1/87155/35/14823/277604/5e6997c5Eda7bf319/66aa791bb83eee45.jpg.webp"></image>
+
+<!-- button就是按钮，size=mini小的按钮 -->
+<button>默认的按钮</button>
+<button size="mini">mini按钮</button>
+
+<view>
+<p>我就不信不能使用p标签吗</p>
+<xxx>我就不信不能使用p标签吗</xxx>
+</view>

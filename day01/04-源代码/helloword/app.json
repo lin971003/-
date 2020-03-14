@@ -1,18 +1,19 @@
 {
   "pages": [
-    "pages/images_switch/index",
+    "pages/switch_images/index",
     "pages/this_demo/index",
     "pages/event_demo/index",
     "pages/data_demo/index",
     "pages/goods/index",
-    "pages/newpage/index",
+    "pages/new_page/index",
     "pages/demo/index",
+    "pages/index/index",
     "pages/logs/logs"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "hello world",
+    "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
   },
   "style": "v2",

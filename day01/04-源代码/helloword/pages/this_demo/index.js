@@ -5,19 +5,19 @@ Page({
    * 页面的初始数据
    */
   data: {
-    isRed:false
+    // 是否给.box添加.red样式
+    isRed:true
   },
-
-  sayHello(){
-    console.log('你好')
+  print(){
+    console.log('打印。。。。')
   },
+  // 改变isRed
   toggleColor(){
-    // console.log('改变颜色')
     // this.isRed = !this.isRed
-    // console.log(this.sayHello())
-    // console.log(this.data.isRed)
+    console.log(this.print())
+    // 改变data属性,借鉴了react
     this.setData({
-      isRed: !this.data.isRed
+      isRed:!this.data.isRed
     })
   },
 

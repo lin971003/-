@@ -1,0 +1,2 @@
+<!-- 事件注册,在结构里面，bind事件名="事件处理方法" -->
+<button bindtap="sayHello">点我呀</button>
