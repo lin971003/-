@@ -1,0 +1,3 @@
+<view class="box" bindtap="sayHello" data-title="joven">
+  <view class="inner" data-title="xjj"></view>
+</view>

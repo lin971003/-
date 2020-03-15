@@ -1,14 +1,20 @@
-// 引入
-import heroList from '../../data/heroList.js'
+// pages/navigateTo_demo/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    // 把heroList赋值给data里面的heroList属性
-    // heroList:heroList
-    heroList
+    num:0
+  },
+  // 点击去首页
+  toIndex(event){
+    console.log(event)
+    // url里面的路径和传参方法和声明式一样
+    let title = event.currentTarget.dataset.title
+    wx.navigateTo({
+      url: '/pages/index/index?title='+title
+    })
   },
 
   /**

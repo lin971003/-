@@ -1,14 +1,11 @@
-// 引入
-import heroList from '../../data/heroList.js'
+// pages/detail/detail.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    // 把heroList赋值给data里面的heroList属性
-    // heroList:heroList
-    heroList
+
   },
 
   /**

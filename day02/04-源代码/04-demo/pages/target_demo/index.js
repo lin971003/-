@@ -1,14 +1,16 @@
-// 引入
-import heroList from '../../data/heroList.js'
+// pages/target_demo/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    // 把heroList赋值给data里面的heroList属性
-    // heroList:heroList
-    heroList
+
+  },
+
+  sayHello(event){
+    // 是有事件冒泡的，从小盒子里面冒泡到大盒子
+    console.log(event)
   },
 
   /**

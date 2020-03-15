@@ -1,0 +1,13 @@
+/* 写样式来区别大小盒子 */
+
+.box {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #666;
+}
+
+.inner {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+}

@@ -1,21 +1,21 @@
-// 引入
-import heroList from '../../data/heroList.js'
+// pages/detail/detail.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    // 把heroList赋值给data里面的heroList属性
-    // heroList:heroList
-    heroList
+    skill:''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    console.log(options.skill)
+    this.setData({
+      skill:options.skill
+    })
   },
 
   /**

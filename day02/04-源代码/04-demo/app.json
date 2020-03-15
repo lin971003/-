@@ -1,7 +1,9 @@
 {
   "pages": [
-    "pages/navigator_demo/index",
+    "pages/target_demo/index",
+    "pages/navigateTo_demo/index",
     "pages/module_demo/index",
+    "pages/navigator_demo/index",
     "pages/swiper_demo/index",
     "pages/review/index",
     "pages/index/index",

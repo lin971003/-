@@ -1,13 +1,12 @@
-// 引入
-import heroList from '../../data/heroList.js'
+import heroList from '../../data/lol_duowan.js'
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    // 把heroList赋值给data里面的heroList属性
-    // heroList:heroList
+    // heroList: heroList
     heroList
   },
 
@@ -15,7 +14,8 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    // 确定是否引入成功
+    // console.log(heroList)
   },
 
   /**
