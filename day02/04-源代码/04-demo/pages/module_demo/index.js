@@ -1,6 +1,6 @@
 // 引入
 //引入的时候，不支持绝对路径
-import sayGoodbye from '../../utils/hello.js'
+import sayHello from '../../utils/hello.js'
 Page({
 
   /**
@@ -14,7 +14,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    sayGoodbye('Joven')
+    sayHello('Joven')
   },
 
   /**

@@ -1,8 +1,6 @@
-function sayHello(name) {
+export default function sayHello(name) {
   console.log(`Hello ${name} !`)
 }
-function sayGoodbye(name) {
+export function sayGoodbye(name) {
   console.log(`Goodbye ${name} !`)
 }
-
-export default sayGoodbye
