@@ -1,0 +1,7 @@
+<text>{{msg}}</text>
+
+<view wx:if="{{goodWeather}}">今天天气不错</view>
+<!-- wx:key的值是item里面唯一的属性的名字，并不是要给一个值 
+如果遍历的数组本身就是一维的，而且每个元素是不相同的，那么wx:key可以设置为*this-->
+<view wx:for="{{countries}}" wx:key="*this">{{item}}--{{index}}</view>
+<button bindtap="sayHello">点我呀</button>

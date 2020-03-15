@@ -1,6 +1,0 @@
-<text>{{message}}</text>
-<view wx:if="{{goodsWeather}}">天气不错</view>
-
-<view wx:for="{{movieList}}" wx:key="*this">{{item}}--{{index}}</view>
-
-<button bindtap="tapHandler">点我呀</button>

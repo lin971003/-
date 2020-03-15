@@ -1,0 +1,23 @@
+.ul{
+  display: flex;
+  /* 换行 */
+  flex-wrap: wrap;
+  
+}
+.li{
+  /* 我想一行展示三个？ */
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  /* 元素水平居中 */
+  align-items: center;
+  margin-top:10px;
+}
+.li image{
+  width: 72px;
+  height: 72px;
+}
+
+.li text{
+  font-size: 12px;
+}

@@ -1,8 +1,0 @@
-<swiper indicator-dots indicator-color="rgba(255, 255, 255, .3)"
-indicator-active-color="#009900" vertical="false" current="1" autoplay="{{false}}" interval="1000" duration="300" circular>
-  <block wx:for="{{[1,2,3,4]}}" wx:key="*this">
-    <swiper-item>
-      <image src="https://img11.360buyimg.com/babel/s700x480_jfs/t1/109042/9/6457/9916/5e4ba9e0E6ca51b1d/230b882f6e195923.jpg!cc_700x480"></image>
-    </swiper-item>
-  </block>
-</swiper>

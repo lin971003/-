@@ -1,0 +1,3 @@
+  <!-- 类似于html a href -->
+  <!-- url就是跳转的链接，路径就是app.json pages数组里面的路径，只不过必须/打头 -->
+  <navigator url="/pages/index/index?title=joven">去首页</navigator>

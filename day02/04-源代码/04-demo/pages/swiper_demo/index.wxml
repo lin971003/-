@@ -1,0 +1,8 @@
+<swiper indicator-dots indicator-color="rgba(255, 255, 255, .3)"
+indicator-active-color="#009900" autoplay interval="3000" duration="200" circular>
+  <block wx:for="{{goodsList}}" wx:key="goodsId">
+    <swiper-item>
+      <image src="https://img13.360buyimg.com/mobilecms/s200x200_jfs/t1/91989/13/14516/143763/5e6645f3E3c707400/f9767cf23862d80b.jpg!cc_200x200.webp"></image>
+    </swiper-item>
+  </block>
+</swiper>

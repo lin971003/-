@@ -1,0 +1,7 @@
+<view class="ul">
+<!-- 对应的每个英雄 -->
+  <view class="li" wx:for="{{heroList}}" wx:key="heroName">
+    <image src="{{item.icon}}"></image>
+    <text>{{item.heroName}}</text>
+  </view>
+</view>

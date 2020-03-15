@@ -1,3 +1,0 @@
-<view class="box" bindtap="tapHandler" data-name="joven">
-  <view class="inner" data-name="sam"></view>
-</view>
