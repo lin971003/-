@@ -16,8 +16,8 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.10.3",
-	"appid": "wxd24d05cdfb5198f9",
-	"projectname": "04-demo",
+	"appid": "wx4ec6df040af98951",
+	"projectname": "lol-game",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
@@ -49,9 +49,10 @@
 			"current": -1,
 			"list": [
 				{
-					"id": -1,
-					"name": "pages/module_demo/index",
-					"pathName": "pages/module_demo/index",
+					"id": 0,
+					"name": "英雄详情",
+					"pathName": "pages/detail/detail",
+					"query": "id=Neeko",
 					"scene": null
 				}
 			]

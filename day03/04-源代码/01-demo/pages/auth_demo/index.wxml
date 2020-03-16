@@ -1,1 +1,0 @@
-<button bindtap="tapHandler">获取用户地址</button>

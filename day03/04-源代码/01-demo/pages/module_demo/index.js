@@ -1,4 +1,5 @@
-// pages/auth_demo/index.js
+// import { sayHello, sayGoodBye} from '../../utils/hello.js'
+import sayHello from '../../utils/hello.js'
 Page({
 
   /**
@@ -7,24 +8,13 @@ Page({
   data: {
 
   },
-  tapHandler(){
-    wx.authorize({
-      scope: 'scope.record',
-      success() {
-        wx.startRecord({
-          success(res) {
-            console.log(res)
-          }
-        })
-      }
-    })
-  },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    console.log(sayHello)
+    // console.log(sayGoodBye)
   },
 
   /**
