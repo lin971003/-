@@ -1,11 +1,11 @@
-// pages/detail/detail.js
+import heroDetailList from '../../data/lol_details_duowan.js'
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    hero:{}
   },
 
   /**
@@ -13,6 +13,30 @@ Page({
    */
   onLoad: function (options) {
     console.log(options.id)
+    console.log(heroDetailList)
+    // 在detail数组里面找一个id为传参的对象
+    // for(let i=0;i<heroDetailList.length;i++){
+    //   let hero =heroDetailList[i]
+    //   // 如果这个对象里面的id等于options.id，就对了
+    //   if(hero.id===options.id){
+    //     // console.log(hero)
+    //     this.setData({
+    //       hero:hero
+    //     })
+    //     return
+    //   }
+    // }
+  // 注意这里是全等,不是赋值
+   let hero = heroDetailList.find(item=>{
+      return item.id===options.id
+    })
+    this.setData({
+      hero
+    })
+    // 动态设置标题
+    wx.setNavigationBarTitle({
+      title: `${hero.title}-${hero.name}`,
+    })
   },
 
   /**

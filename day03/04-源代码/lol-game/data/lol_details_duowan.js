@@ -1,4 +1,4 @@
-module.exports = [{
+export default [{
     id: "rakan",
     title: "幻翎",
     name: "洛",

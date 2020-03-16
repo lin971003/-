@@ -51,7 +51,7 @@ swiper image {
 
 .ability-item{
   display: flex;
-  
+  margin-bottom: 6px;
 }
 
 .ability-item progress{
