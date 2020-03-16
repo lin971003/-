@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/rpx_demo/index",
     "pages/module_demo/index",
     "pages/index/index",
     "pages/logs/logs"

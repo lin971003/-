@@ -1,0 +1,11 @@
+.box{
+  /* 375px可以占满整个宽度 */
+  width: 100px;
+  height: 100px;
+  background-color: green;
+}
+.rbox{
+  width: 375rpx;
+  height: 200rpx;
+  background-color: green;
+}
