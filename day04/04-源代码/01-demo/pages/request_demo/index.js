@@ -7,24 +7,27 @@ Page({
   data: {
 
   },
-  doRequest(){
-    // console.log(XMLHttpRequest)
+  // 获取豆瓣电影的数据
+  getMovies(){
+    // 整个来说，和jQuery.ajax差不多
     wx.request({
-      url:'https://api.douban.com/v2/movie/in_theaters',
-      header:{
-        'content-type':'application/x-www-form-urlencoded'
-      },
+      url: 'https://api.douban.com/v2/movie/in_theaters',
+      method:'GET',
       data:{
         apikey:'0df993c66c0c636e29ecbb5344252a4a'
       },
-      success:res=>{
-        // console.log(res)
+      header:{
+        'content-type': 'application/x-www-form-urlencoded'
+      },
+      success(res){
+        console.log(res.data.subjects)
         wx.showToast({
-          title: '请求成功了',
+          title: 'ok',
         })
       }
     })
   },
+
   /**
    * 生命周期函数--监听页面加载
    */

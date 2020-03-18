@@ -1,4 +1,0 @@
-<button bindtap="getAddr">获取用户通讯地址</button>
-<button bindtap="getWeRun">获取用户运行步数</button>
-<!-- <button bindtap="getUserInfo">获取用户用户信息</button> -->
-<button open-type="getUserInfo" bindgetuserinfo="getUserInfo">获取用户用户信息</button>
