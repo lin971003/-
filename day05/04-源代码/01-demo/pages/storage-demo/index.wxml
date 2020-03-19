@@ -1,6 +1,0 @@
-<button bindtap="saveAge">存年龄</button>
-<button bindtap="saveName">存姓名</button>
-<button bindtap="getAgeName">取年龄和姓名</button>
-<button bindtap="removeName">删除姓名</button>
-<button bindtap="clearAll">清除所有</button>
-<button bindtap="savePhoneBill">存话费</button>

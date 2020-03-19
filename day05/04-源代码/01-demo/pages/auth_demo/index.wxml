@@ -1,0 +1,3 @@
+<button bindtap="getWeRun">运动步数</button>
+<button bindtap="getAddr">获取通讯地址</button>
+<button open-type="getUserInfo" bindgetuserinfo="getInfo">获取用户信息</button>
