@@ -1,0 +1,8 @@
+<input value="默认为文本输入键盘"></input>
+<input value="数字键盘" type="number"></input>
+<input value="身份证键盘" type="idcard"></input>
+
+<view>键盘右下角按钮的文案</view>
+<input confirm-type="send"></input>
+<input confirm-type="search" bindconfirm="confirmHandler"
+bindinput="getInputVal"></input>

@@ -1,4 +1,4 @@
-import request from '../../utils/request.js'
+// pages/login/login.js
 Page({
 
   /**
@@ -8,14 +8,10 @@ Page({
 
   },
 
-  doRequest(){
-    request({
-      url: 'https://api.douban.com/v2/movie/in_theaters?apikey=0df993c66c0c636e29ecbb5344252a4a',
-      header: {
-        'Content-Type': 'application/x-www-form-urlencoded' // 默认值
-      }
-    }).then(res=>{
-      console.log(res)
+  toIndex(){
+    // navigateTo不能用于跳转tab页
+    wx.switchTab({
+      url: '/pages/index/index',
     })
   },
 

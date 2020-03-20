@@ -1,7 +1,9 @@
 {
   "pages": [
+    "pages/input_demo/index",
     "pages/index/index",
-    "pages/requst_demo/index",
+    "pages/login/login",
+    "pages/storage_demo/index",
     "pages/logs/logs"
   ],
   "window": {
@@ -11,8 +13,6 @@
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "color": "#A8A8A8",
-    "selectedColor": "#FF951C",
     "list": [
       {
         "pagePath": "pages/index/index",

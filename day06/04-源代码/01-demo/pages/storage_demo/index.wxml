@@ -1,0 +1,4 @@
+<button bindtap="nameStorage">名字缓存</button>
+<button bindtap="ageStorage">年龄缓存</button>
+<button bindtap="getStorageInfo">其他</button>
+<button bindtap="objectStorage">对象缓存</button>
