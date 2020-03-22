@@ -1,0 +1,1 @@
+<view data-event-opts="{{[['tap',[['toSearch',['$event']]]]]}}" class="header data-v-77b1f974" bindtap="__e"><view class="inner data-v-77b1f974"><icon type="search" color="#bbb" size="16" class="data-v-77b1f974"></icon><text class="data-v-77b1f974">搜索</text></view></view>
