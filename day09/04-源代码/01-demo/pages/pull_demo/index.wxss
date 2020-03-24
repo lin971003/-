@@ -1,4 +1,5 @@
-.li{
-  height: 130rpx;
-  border-bottom: 1px solid #ccc;
+.item{
+  height: 150rpx;
+  border:1rpx solid #ccc;
+  box-sizing: border-box;
 }

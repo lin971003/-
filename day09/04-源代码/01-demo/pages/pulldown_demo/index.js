@@ -47,14 +47,10 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-    setTimeout(()=>{
-      wx.showToast({
-        title: '下拉了',
-      })
-      // 手动结束下拉动画
-      wx.stopPullDownRefresh()
-    },500)
-   
+    wx.showToast({
+      title: '重新加载第一页的数据',
+    })
+    // TODO 重新加载第一页的数据
   },
 
   /**

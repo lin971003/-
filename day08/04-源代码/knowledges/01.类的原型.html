@@ -1,0 +1,13 @@
+<script>
+function Vue(){
+
+}
+
+// 在Vue的原型上设置一个$request
+Vue.prototype.$request = function(){
+  console.log('发送请求')
+}
+
+const app = new Vue()
+app.$request()
+</script>

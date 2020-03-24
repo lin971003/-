@@ -1,3 +1,0 @@
-<text>{{num}}</text>
-
-<button bindtap="add">+</button>

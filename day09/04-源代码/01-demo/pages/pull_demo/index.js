@@ -11,48 +11,49 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function(options) {
+  onLoad: function (options) {
 
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady: function() {
+  onReady: function () {
 
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function() {
+  onShow: function () {
 
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
-  onHide: function() {
+  onHide: function () {
 
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
-  onUnload: function() {
+  onUnload: function () {
 
   },
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
-  onPullDownRefresh: function() {
-    // 加载第一页
-    setTimeout(()=>{
+  onPullDownRefresh: function () {
+    // 加载第一页的数据
+    // 模拟接口请求，让数据加载慢一点
+    setTimeout(() => {
       this.setData({
         arr: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
       })
-      // 手动停止下拉动画
+      // 主动停止动画
       wx.stopPullDownRefresh()
     },500)
   },
@@ -60,16 +61,15 @@ Page({
   /**
    * 页面上拉触底事件的处理函数
    */
-  onReachBottom: function() {
-    // console.log('上拉了')
-    // 加载下一页
+  onReachBottom: function () {
+    // 模拟接口请求，让数据加载慢一点
     setTimeout(() => {
-      let arr = this.data.arr
+      let _arr = this.data.arr
       for (let i = 0; i < 10; i++) {
-        arr.push(arr.length+1)
+        _arr.push(_arr.length + 1)
       }
       this.setData({
-        arr
+        arr: _arr
       })
     }, 500)
   },
@@ -77,7 +77,7 @@ Page({
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function() {
+  onShareAppMessage: function () {
 
   }
 })
