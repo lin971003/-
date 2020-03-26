@@ -1,4 +1,4 @@
-// pages/home/index.js
+// pages/home/home.js
 Page({
 
   /**
@@ -12,35 +12,35 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log('分类-页面加载')
+    console.log('首页-加载')
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    console.log('分类-页面初次渲染完成')
+    console.log('首页-初次渲染完成')
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    console.log('分类-页面显示')
+    console.log('首页-显示')
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-    console.log('分类-页面隐藏')
+    console.log('首页-隐藏')
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-    console.log('分类-页面卸载')
+    console.log('首页-卸载')
   },
 
   /**

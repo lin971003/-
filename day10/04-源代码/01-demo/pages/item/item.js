@@ -1,4 +1,4 @@
-// pages/home/index.js
+// pages/home/home.js
 Page({
 
   /**
@@ -7,9 +7,16 @@ Page({
   data: {
 
   },
-  toItem(){
-    wx.navigateTo({
-      url: '/pages/item/index',
+
+
+  goBack(){
+    wx.navigateBack()
+  },
+
+
+  toIndex(){
+    wx.switchTab({
+      url: '/pages/home/home',
     })
   },
 
@@ -17,35 +24,35 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log('搜索列表-页面加载')
+    console.log('商品详情-加载')
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    console.log('搜索列表-页面初次渲染完成')
+    console.log('商品详情-初次渲染完成')
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    console.log('搜索列表-页面显示')
+    console.log('商品详情-显示')
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-    console.log('搜索列表-页面隐藏')
+    console.log('商品详情-隐藏')
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-    console.log('搜索列表-页面卸载')
+    console.log('商品详情-卸载')
   },
 
   /**

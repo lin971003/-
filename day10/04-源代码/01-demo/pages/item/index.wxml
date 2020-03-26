@@ -1,2 +1,0 @@
-<button bindtap="goBack">返回</button>
-<button bindtap="toIndex">去首页</button>

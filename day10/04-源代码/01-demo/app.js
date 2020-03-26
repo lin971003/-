@@ -12,7 +12,7 @@ App({
    */
   onShow: function (options) {
     console.log('app 显示')
-    console.log(options.scene)
+    console.log("场景值: "+ options.scene)
   },
 
   /**

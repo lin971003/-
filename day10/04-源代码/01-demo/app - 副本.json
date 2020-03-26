@@ -2,8 +2,7 @@
   "pages": [
     "pages/home/home",
     "pages/category/category",
-    "pages/search_list/search_list",
-    "pages/item/item"
+    "pages/search_list/search_list"
   ],
   "window": {
     "backgroundTextStyle": "light",
