@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      .child{
+        border:1px solid green;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <h2>我是父组件</h2>
+      <h3>父对子说:{{info}}</h3>
+      <input type="text" v-model="info">
+      <!-- 父组件使用子组件 -->
+      <child :message="info"></child>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- 子组件的模板 -->
+    <script type="text/x-template" id="tpl">
+      <div class="child">
+        <h2>我是子组件</h2>
+        <h3>父对子说:{{msg}}</h3>
+        <input type="text" v-model="msg">
+      </div>
+    </script>
+    <script>
+      Vue.component('child', {
+        template:'#tpl',
+        props:['message'],
+        data(){
+          return{
+            msg:this.message
+          }
+        },
+        // 监听prop的变化
+        watch:{
+          // message就是prop
+          message(newValue){
+            // 当message有变化时，会传给newValue
+            // console.log(newValue)
+            this.msg = newValue
+          }
+        }
+      })
+
+      const app = new Vue({
+        el: "#app",
+        data: {
+          info:'不要早恋'
+        }
+      });
+      </script>
+  </body>
+</html>
