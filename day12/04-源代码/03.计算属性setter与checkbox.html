@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <h3>请选择以下你会的技能</h3>
+      <label for="htmlcb">html</label>
+      <input id="htmlcb" type="checkbox" v-model="ishtml" />
+      <label for="jscb">js</label>
+      <input id="jscb" type="checkbox" v-model="isjs" />
+      <label for="csscb">css</label>
+      <input id="csscb" type="checkbox" v-model="iscss" />
+      <label for="vuecb">vue</label>
+      <input id="vuecb" type="checkbox" v-model="isvue" />
+      <hr />
+      <label for="allcb">全选</label>
+      <input id="allcb" type="checkbox" v-model="isAll" />
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+      const app = new Vue({
+        el: '#app',
+        data: {
+          ishtml: false,
+          isjs: false,
+          iscss: false,
+          isvue: false
+        },
+        computed: {
+          // 以上技能全选中，全选也勾选
+          isAll: {
+            get () {
+              // 以上技能全选中，全选也勾选
+              return this.ishtml && this.isjs && this.iscss && this.isvue
+            },
+            // 如果全选勾选时，以上技能全部勾选;如果全选不勾选时，以上技能全部不勾选
+            //改变全选勾选的状态时，set形参可以获取这个状态
+            set(status){
+              console.log(status)
+              this.ishtml= status
+              this.isjs= status
+              this.iscss= status
+              this.isvue= status
+            }
+          }
+        }
+      })
+    </script>
+  </body>
+</html>

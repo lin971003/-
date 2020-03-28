@@ -9,11 +9,10 @@
   <body>
     <div id="app">
       <ul>
-        <li v-for="(item, index) in list" :key="index" @click="arrangeArr(item)">
+        <li v-for="(item, index) in list" :key="item" @click="arrangeArr(item)">
           {{item}}
         </li>
       </ul>
-      <button @click="arrangeArr">头部插入并去重</button>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script>
