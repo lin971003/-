@@ -8,87 +8,35 @@ Page({
 
   },
 
-  getWeRun() {
-    wx.authorize({
-      scope: 'scope.werun',
-    })
-  },
-
-  testAddr(){
-    //首次发起或者已经授权
-    // 发起授权
+  getAddr() {
+    // 1. 发起授权
     wx.authorize({
       scope: 'scope.address',
-      success() {
+      success(authRes) {
+        console.log(authRes)
+        // 2. 调用对应授权接口
         wx.chooseAddress({
-          success(res) {
+          success:res=>{
             console.log(res)
           }
         })
       },
-      fail(){
-        console.log('ok')
+      fail(authRes){
+        // 用户第一次拒绝，或者拒绝后再点击都会进入fail
+        // 提示用户，打开
         wx.showModal({
-          title: '授权',
-          content: '请允许通讯地址权限',
-          success(modelRes) {
-            if (modelRes.confirm) {
-              // 打开界面
+          title: '提示',
+          content: '请在设置中允许通讯地址',
+          success:res=>{
+            if(res.confirm){
+              // 打开设置
               wx.openSetting({
+                
               })
             }
           }
         })
       }
-    })
-  },
-
-  getAddr() {
-    wx.getSetting({
-      success(settingRes) {
-        // console.log(res)
-        if (settingRes.authSetting['scope.address'] === false) {
-          //拒绝的
-          wx.showModal({
-            title: '授权',
-            content: '请允许通讯地址权限',
-            success(modelRes) {
-              if (modelRes.confirm) {
-                // 打开界面
-                wx.openSetting({
-                })
-              }
-            }
-          })
-        } else {
-          //首次发起或者已经授权
-          // 发起授权
-          wx.authorize({
-            scope: 'scope.address',
-            success() {
-              wx.chooseAddress({
-                success(res) {
-                  console.log(res)
-                }
-              })
-            }
-          })
-        }
-      }
-    })
-  },
-  // 获取授权数据
-  getAuthData() {
-    wx.getSetting({
-      success(res) {
-        console.log(res)
-      }
-    })
-  },
-  // 打开授权设置
-  openSetting() {
-    wx.openSetting({
-
     })
   },
 
