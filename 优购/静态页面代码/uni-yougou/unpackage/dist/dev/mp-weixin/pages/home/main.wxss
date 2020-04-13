@@ -1,0 +1,74 @@
+.header {
+  height: 100rpx;
+  background-color: #eb4450;
+  padding: 20rpx 16rpx;
+  box-sizing: border-box;
+}
+.header .inner {
+  background-color: #fff;
+  border-radius: 4rpx;
+  height: 60rpx;
+  color: #bbb;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+.header .inner icon {
+  margin: 6rpx 16rpx 0 0;
+}
+swiper {
+  height: 340rpx;
+}
+swiper image {
+  width: 100%;
+  height: 340rpx;
+}
+.nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  height: 194rpx;
+  -webkit-justify-content: space-around;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.nav image {
+  width: 128rpx;
+  height: 140rpx;
+}
+.floor {
+  padding: 20rpx 17rpx 0;
+}
+.floor > image {
+  height: 88rpx;
+  width: 100%;
+}
+.product_list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.product_list > image {
+  width: 232rpx;
+  height: 386rpx;
+}
+.product_list .right {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  font-size: 0;
+}
+.product_list .right > image {
+  width: 232rpx;
+  height: 188rpx;
+  margin: 0 0 10rpx 10rpx;
+}
+

@@ -1,1 +1,0 @@
-<view class="wrapper"><search-bar vue-id="1" bind:__l="__l"></search-bar><view class="history-search"><view class="title"><text class="title">历史搜索</text><icon type="clear" size="18"></icon></view><view><view>小米</view><view>华为手机</view><view>锤子手机</view><view>iPad</view></view></view></view>
