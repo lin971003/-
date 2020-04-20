@@ -14,19 +14,19 @@
   -moz-osx-font-smoothing: grayscale;
 }
 .icon-uncheck:before {
-  content: "\E70F";
+  content: "\e70f";
 }
 .icon-checked:before {
-  content: "\E722";
+  content: "\e722";
 }
 .icon-share:before {
-  content: "\E674";
+  content: "\e674";
 }
 .icon-kefu:before {
-  content: "\E62C";
+  content: "\e62c";
 }
 .icon-cart:before {
-  content: "\E68D";
+  content: "\e68d";
 }
 page {
 		color: #333;

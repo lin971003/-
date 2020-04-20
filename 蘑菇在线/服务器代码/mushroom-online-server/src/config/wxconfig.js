@@ -1,4 +1,4 @@
 module.exports = {
   AppID: "wx4ec6df040af98951", // 个人AppId
-  AppSecret: "68053c87f314dcc360afaef40df3b800", // 个人AppSecret
+  AppSecret: "ff47706e9052b290cb1ebd171c550c70", // 个人AppSecret
 }

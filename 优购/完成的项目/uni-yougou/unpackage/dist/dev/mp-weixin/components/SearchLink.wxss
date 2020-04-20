@@ -1,10 +1,10 @@
-.header.data-v-77b1f974 {
+.header.data-v-25e9ba96 {
   height: 100rpx;
   padding: 20rpx 16rpx;
   box-sizing: border-box;
   background-color: #eb4450;
 }
-.header .inner.data-v-77b1f974 {
+.header .inner.data-v-25e9ba96 {
   height: 60rpx;
   width: 100%;
   background-color: #fff;
@@ -19,11 +19,11 @@
   -webkit-align-items: center;
           align-items: center;
 }
-.header .inner text.data-v-77b1f974 {
+.header .inner text.data-v-25e9ba96 {
   color: #bbb;
   margin-left: 16rpx;
 }
-.header .inner icon.data-v-77b1f974 {
+.header .inner icon.data-v-25e9ba96 {
   margin-top: 4rpx;
 }
 

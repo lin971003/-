@@ -1,4 +1,4 @@
-.header.data-v-402bc509 {
+.header.data-v-354657a7 {
   height: 120rpx;
   background-color: #eee;
   position: relative;
@@ -12,18 +12,18 @@
   -webkit-justify-content: center;
           justify-content: center;
 }
-.header input.data-v-402bc509 {
+.header input.data-v-354657a7 {
   background-color: #fff;
   height: 60rpx;
   width: 720rpx;
   padding-left: 74rpx;
   box-sizing: border-box;
 }
-.header .search-icon.data-v-402bc509 {
+.header .search-icon.data-v-354657a7 {
   position: absolute;
   left: 44rpx;
 }
-.header .clear-icon.data-v-402bc509 {
+.header .clear-icon.data-v-354657a7 {
   position: absolute;
   right: 44rpx;
   z-index: 100;
